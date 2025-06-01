@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S6QC2470NF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S6QC2470NF');
+</script>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="keywords" content="website, Staples, soccer, photography, code, developer, home, student">
+<meta name="author" content="Perrin Root">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Perrin Root</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/mainstyle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://unpkg.com/@popmotion/popmotion@8.7.6/dist/popmotion.global.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+
+
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+<style>
+  .fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .navbar-nav li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Optional: smooth transition */
+.dropdown-menu {
+  transition: all 0.3s ease;
+}
+.dropdown-menu > li > a:hover {
+  background-color: transparent !important; /* remove Bootstrap blue background */
+  color: #bfba55 !important; /* your gold */
+}
+.dropdown-menu > li.active > a,
+.dropdown-menu > li.active > a:focus,
+.dropdown-menu > li.active > a:hover {
+  background-color: transparent !important;
+  color: #bfba55 !important;
+}
+</style>
+</head>
+<body>
+
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.webp" alt="Logo" class="navbar-logo">
+                </a>
+                
+
+
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Photos</a></li>
+                <li class="dropdown"> <!-- Add the 'dropdown' class here -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a> <!-- Add 'dropdown-toggle' class and 'data-toggle="dropdown"' -->
+                    <ul class="dropdown-menu"> <!-- Add the 'dropdown-menu' class -->
+                        <li><a href="website.html">Website</a></li>
+                        <li><a href="programming.html">Other</a></li>
+                       
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+
+<section id="home_1" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="rowtop">
+               <div class="iconstop">
+                    <ul class="social-icon2">
+                         <li><a href="https://www.instagram.com/perrinroot/" target="_blank" class="fa fa-instagram"></a></li>
+                         <li><a href="https://github.com/PerrinRoot" target="_blank" class="fa fa-github"></a></li>
+                         <li><a href="https://www.flickr.com/photos/perrinphoto/" target="_blank" class="fa fa-flickr"></a></li>
+                         <li><a href="https://www.linkedin.com/in/perrin-root/" target="_blank" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                   <h1>Hi, I'm</h1>
+                    <h2 id="nameElement">Perrin Root</h2>
+                    <h4>Student @ Staples High School</h4>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<!-- Portfolio Section -->
+<section id="coding-portfolio" class="py-20 bg-white">
+  <div class="max-w-screen-xl mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-16 fade-up">
+      <svg class="h-12 w-12 mx-auto mb-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+      </svg>
+      <h2 class="text-5xl md:text-6xl font-bold mb-4 font-serif text-black text-center">Website Development</h2>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-lg fade-up mt-24 ">
+      <!-- Project 1 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/website2.0.webp" alt="Personal Website Screenshot">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Personal Website</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">HTML</span>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">CSS</span>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">JS</span>
+          </div>
+          <p class="text-gray-700 mb-8 text-2xl text-base leading-relaxed flex-grow">
+            This very website. The third rendition, built with HTML, CSS, and JS.
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://perrinroot.com" target="_blank"
+              class="visited:text-black focus:text-black active:text-black flex-1 flex items-center justify-center border border-indigo-500 text-black py-4 px-6 rounded-md hover:bg-indigo-50 hover:text-indigo-600 text-lg font-bold">
+              <i data-feather="external-link" class="mr-2 w-6 h-6"></i> Live Demo
+            </a>
+            <a href="https://github.com/your-username/ecommerce-platform" target="_blank"
+              class="visited:text-black focus:text-black active:text-black flex-1 flex items-center justify-center border border-gray-600 text-black py-4 px-6 rounded-md hover:bg-gray-100 hover:text-gray-700 text-lg font-bold">
+              <i data-feather="github" class="mr-2 w-6 h-6"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/gamebank1.webp" alt="Multiplayer Gamebank Screenshot">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Multiplayer Gamebank</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Vue</span>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">TypeScript</span>
+          </div>
+          <p class="text-gray-700 mb-8 text-2xl text-base leading-relaxed flex-grow">
+            A gamebank that features a variety of games to play with friends. Built with Vue and TypeScript.
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://gamebank.netlify.app" target="_blank"
+              class="visited:text-black focus:text-black active:text-black flex-1 flex items-center justify-center border border-indigo-500 text-black py-4 px-6 rounded-md hover:bg-indigo-50 hover:text-indigo-600 text-lg font-bold">
+              <i data-feather="external-link" class="mr-2 w-6 h-6"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/enable.webp" alt="Project Three Screenshot">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Staples e-NABLE Website</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Wordpress</span>
+          </div>
+          <p class="text-gray-700 mb-8 text-2xl text-base leading-relaxed flex-grow">
+            A website for the Staples High School chapter of Enabling The Future.
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://staplesenable.org" target="_blank"
+              class="visited:text-black focus:text-black active:text-black flex-1 flex items-center justify-center border border-indigo-500 text-black py-4 px-6 rounded-md hover:bg-indigo-50 hover:text-indigo-600 text-lg font-bold">
+              <i data-feather="external-link" class="mr-2 w-6 h-6"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-lg fade-up mt-24">
+
+      <!-- Project 1 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/birthbungalow.webp" alt="Personal Website Screenshot">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Birth Bungalow Website</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Elementor</span>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Wordpress</span>
+          </div>
+          <p class="text-gray-700 text-2xl mb-8 text-base leading-relaxed flex-grow">
+            A website I refurbished and redesigned for a local medical company.
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://birthbungalow.com" target="_blank"
+              class=" visited:text-black focus:text-black active:text-black flex-1 flex items-center justify-center border border-indigo-500 text-black py-4 px-6 rounded-md hover:bg-indigo-50 hover:text-indigo-600 text-lg font-bold">
+              <i data-feather="external-link" class="mr-2 w-6 h-6"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/kathy.webp" alt="Multiplayer Gamebank Screenshot">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Artist Website</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Squarespace</span>
+          </div>
+          <p class="text-gray-700 mb-8 text-2xl text-base leading-relaxed flex-grow">
+            A portfolio-based website I built for a local artist.
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://kathyvaillancourt.com" target="_blank"
+              class=" visited:text-black focus:text-black active:text-black flex-1 flex items-center justify-center border border-indigo-500 text-black py-4 px-6 rounded-md hover:bg-indigo-50 hover:text-indigo-600 text-lg font-bold">
+              <i data-feather="external-link" class="mr-2 w-6 h-6"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/pirant.webp" alt="Project Three Screenshot">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Pirant Tutoring Website</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">HTML</span>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">CSS</span>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">JS</span>
+          </div>
+          <p class="text-gray-700 mb-8 text-2xl text-base leading-relaxed flex-grow">
+            A website I built for my tutoring buisness. Built with HTML, CSS, and JS. 
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://www.pirant.org" target="_blank"
+              class="visited:text-black focus:text-black active:text-black flex-1 flex items-center justify-center border border-indigo-500 text-black py-4 px-6 rounded-md hover:bg-indigo-50 hover:text-indigo-600 text-lg font-bold">
+              <i data-feather="external-link" class="mr-2 w-6 h-6"></i> Live Demo
+            </a>
+            <a href="https://github.com/PerrinRoot/piranttutoring" target="_blank"
+              class="visited:text-black focus:text-black active:text-black flex-1 flex items-center justify-center border border-gray-600 text-black py-4 px-6 rounded-md hover:bg-gray-100 hover:text-gray-700 text-lg font-bold">
+              <i data-feather="github" class="mr-2 w-6 h-6"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- See More Button -->
+    <div class="text-center mt-12 fade-up">
+      <a href="website.html"
+         class="inline-block rounded px-6 py-3 text-black border border-indigo-600 hover:border-indigo-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-300 font-medium">
+        See More Projects
+      </a>
+    </div>    
+  </div>
+</section>
+
+<section id="coding-portfolio" class="py-20 bg-white">
+  <div class="max-w-screen-xl mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-16 fade-up">
+      <svg class="h-12 w-12 mx-auto mb-6 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+      </svg>
+      <h2 class="text-5xl md:text-6xl font-bold mb-4 font-serif text-black text-center">Other Projects</h2>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-lg fade-up mt-24 ">
+      <!-- Project 1 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/vigenere.webp" >
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Vigenère Cipher Decoder</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Python</span>
+          </div>
+          <p class="text-gray-700 mb-8 text-2xl text-base leading-relaxed flex-grow">
+            A Python script that decodes a Vigenère Cipher using a Kasiski Examination and Frequency Analysis.
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://github.com/PerrinRoot/VigenereDecoder" target="_blank"
+              class="flex-1 flex items-center justify-center border border-gray-600 visited:text-black focus:text-black active:text-black text-black py-4 px-6 rounded-md hover:bg-gray-100 hover:text-gray-700 text-lg font-bold">
+              <i data-feather="github" class="mr-2 w-6 h-6"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/escape1.webp" alt="Multiplayer Gamebank Screenshot">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Escape Room Game</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Java</span>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Processing</span>
+          </div>
+          <p class="text-gray-700 mb-8 text-2xl text-base leading-relaxed flex-grow">
+            One of my first projects, a visual-based escape room built in Java using Processing.
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://github.com/PerrinRoot/escaperoom" target="_blank"
+              class="flex-1 flex items-center justify-center visited:text-black focus:text-black active:text-black border border-gray-600 text-black py-4 px-6 rounded-md hover:bg-gray-100 hover:text-gray-700 text-lg font-bold">
+              <i data-feather="github" class="mr-2 w-6 h-6"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-50 rounded-2xl shadow-xl overflow-hidden flex flex-col hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300">
+        <div class="relative h-100 w-full">
+          <img class="w-full h-full object-cover" src="images/game.webp" alt="Project Three Screenshot">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-4xl font-semibold mb-4 font-serif text-black">Beta Unreal Engine Game</h3>
+          <div class="mb-6 text-base">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">C++</span>
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-lg font-semibold mr-2 mb-2 px-4 py-2 rounded-full">Unreal Engine</span>
+          </div>
+          <p class="text-gray-700 mb-8 text-2xl text-base leading-relaxed flex-grow">
+            A beta wave-based fighting game built in Unreal Enginge using C++. 
+          </p>
+          <div class="mt-auto flex space-x-4">
+            <a href="https://blog.perrinroot.com/learning-and-teaching/" target="_blank"
+              class="flex-1 flex items-center justify-center visited:text-black focus:text-black active:text-black border border-indigo-500 text-black py-4 px-6 rounded-md hover:bg-indigo-50 hover:text-indigo-600 text-lg font-bold">
+              <i data-feather="external-link" class="mr-2 w-6 h-6"></i> View Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- See More Button -->
+    <div class="text-center mt-12 fade-up">
+      <a href="programming.html"
+         class="inline-block rounded px-6 py-3 text-black border border-indigo-600 hover:border-indigo-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors duration-300 font-medium">
+        See More Projects
+      </a>
+    </div> 
+  </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>About</h3>
+                    <p>Hi there. I'm a senior at Staples High School. When I'm not working, I enjoy playing soccer, taking photographs, coding a new project, or reading.</p>
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2025 perrinroot.com</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Some Contacts</h3>
+                    <p><i class="fa fa-pencil"></i> Blog: blog.perrinroot.com</p>
+                    <p><i class="fa fa-envelope"></i> Email: Proot@perrinroot.com</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="https://www.instagram.com/perrinroot/" target="_blank" class="fa fa-instagram"></a></li>
+                         <li><a href="https://github.com/PerrinRoot" target="_blank" class="fa fa-github"></a></li>
+                         <li><a href="https://www.flickr.com/photos/perrinphoto/" target="_blank" class="fa fa-flickr"></a></li>
+                         <li><a href="https://www.linkedin.com/in/perrin-root/" target="_blank" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script defer src="js/jquery.js"></script>
+<script defer src="js/bootstrap.min.js"></script>
+<script defer src="js/particles.min.js"></script>
+<script defer src="js/app.js"></script>
+<script defer src="js/jquery.parallax.js"></script>
+<script defer src="js/smoothscroll.js"></script>
+<script defer src="js/custom.js"></script>
+<script defer src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+<script>
+  // Reveal animations on scroll
+  const faders = document.querySelectorAll('.fade-up');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  faders.forEach(el => observer.observe(el));
+
+  // Feather icons
+  feather.replace();
+</script>
+   
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+  color: white;
+}
+
+.section-title {
+  font-size: 2.5rem; /* Increased from 2rem */
+  font-weight: bold;
+  margin: 2rem;
+  margin-top: 6rem;
+  color: black;
+}
+
+.projects-container {
+  position: relative;
+  margin: 2rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 2rem;
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+
+.project-list::-webkit-scrollbar {
+  display: none;
+}
+
+.project-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.project-card {
+  background: #1e1e26;
+  border-radius: 12px;
+  min-width: 350px; /* Increased from 300px */
+  max-width: 450px;
+  flex-shrink: 0;
+  padding: 1.5rem; /* Increased padding */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  font-size: 2.5rem; /* Increased from 1.25rem */
+  margin-top: 1rem;
+}
+
+.project-card p {
+  font-size: 1.75rem; /* Increased from 0.9rem */
+  margin: 1rem 0;
+}
+
+.project-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-right: 1.25rem;
+  color: #66ccff;
+  font-size: 1.5rem; /* Increased from 0.85rem */
+}
