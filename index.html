@@ -461,21 +461,26 @@
 
 
 <script>
-  // Reveal animations on scroll
-  const faders = document.querySelectorAll('.fade-up');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 });
+  document.addEventListener("DOMContentLoaded", function () {
+    // Reveal animations on scroll
+    const faders = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
 
-  faders.forEach(el => observer.observe(el));
+    faders.forEach(el => observer.observe(el));
 
-  // Feather icons
-  feather.replace();
+    // Ensure Feather icons render after everything loads
+    if (window.feather) {
+      feather.replace();
+    }
+  });
 </script>
+
    
 
 
